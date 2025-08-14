@@ -137,9 +137,18 @@ function replaceLetter(params) {
   let newString = '';
   for (let i = 0; i < string.length; i++) {
     letterWord = string[i];
-    newString += letterWord.replaceAll('a', '!');
+    if (
+      letterWord == 'a' ||
+      letterWord == 'A' ||
+      letterWord == 'а' ||
+      letterWord == 'А'
+    ) {
+      newString += '!';
+      continue
+    }
+    newString += letterWord;
   }
   return console.log(newString);
 }
 
-// replaceLetter();
+replaceLetter();
