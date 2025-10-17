@@ -1,3 +1,5 @@
+// Скрипт закомментирован в HTML
+
 const filterRealization = function (array, callback) {
   const result = [];
 

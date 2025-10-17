@@ -1,3 +1,5 @@
+// Скрипт закомментирован в HTML
+
 const mapRealization = function (array, callback) {
   const result = [];
   for (let i = 0; i < array.length; i++) {
